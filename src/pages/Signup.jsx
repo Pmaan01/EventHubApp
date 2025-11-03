@@ -43,7 +43,7 @@ export default function Signup() {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       toast.success("Account created — welcome!");
-      navigate("/");
+      navigate("/home");
     } catch (err) {
       const msg =
         err.code === "auth/email-already-in-use"

@@ -25,7 +25,7 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       toast.success("Welcome back!");
-      navigate("/");
+      navigate("/home");
     } catch (err) {
       const msg =
         err.code === "auth/wrong-password"
