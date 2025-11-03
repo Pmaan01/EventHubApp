@@ -9,6 +9,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Home from './pages/Home';
 import LandingPage from './pages/LandingPage';
+import CreateEvent from "./pages/CreateEvent";
+import EventDetails from './pages/EventDetails';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<Home/>} />
         <Route path="/" element={<LandingPage/>} />
+        <Route path="/events/:eventId" element={<EventDetails />} />
+        <Route path="/create-event" element={<CreateEvent/>}/>
 
 
       </Routes>
