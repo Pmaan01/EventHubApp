@@ -157,7 +157,7 @@ export default function Signup() {
         </div>
 
         <Link
-          to="/"
+          to="/login"
           className="block text-center py-3 rounded-xl border-2 border-indigo-200 text-indigo-600 font-semibold hover:bg-indigo-50 hover:border-indigo-300 transition-all duration-200 transform hover:scale-105 active:scale-95"
         >
           Log In

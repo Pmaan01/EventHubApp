@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import LandingPage from './pages/LandingPage';
 import CreateEvent from "./pages/CreateEvent";
 import EventDetails from './pages/EventDetails';
+import AllEvents from './pages/AllEvents.jsx';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<LandingPage/>} />
         <Route path="/events/:eventId" element={<EventDetails />} />
         <Route path="/create-event" element={<CreateEvent/>}/>
+        <Route path="/events" element={<AllEvents />} />
 
 
       </Routes>
